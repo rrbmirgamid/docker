@@ -97,7 +97,7 @@ start.sh:
 ####
 
 #!/bin/sh
-/usr/sbin/httpd -k start
+/usr/sbin/httpd -k start  
 /bin/sh
 
 ####
@@ -112,7 +112,7 @@ docker build -t alpine/websrv websrv/
 docker run --name test2 -d -t alpine/websrv /start.sh
 
 ## port mapping (host 80, container 80)
-docker run --name test2 -d -t -p 80:80 alpine/websrv /start.sh
+docker run --name test2 -d -t -p 80:80 alpine/websrv /start.sh  
 docker run --name test2 -i -t -p 80:80 alpine/websrv /start.sh
 
 ## run a command in a running container
