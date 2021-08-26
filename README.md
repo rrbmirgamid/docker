@@ -83,14 +83,14 @@ contents of websrv directory
 Dockerfile:
 ####
 
-FROM alpine
-MAINTAINER Test1 Test2 <test1@test2.com>
-RUN /sbin/apk update
-RUN /sbin/apk upgrade
-RUN /sbin/apk add apache2
-RUN /bin/rm /var/www/localhost/htdocs/index.html
-COPY index.html /var/www/localhost/htdocs/index.html
-RUN /usr/sbin/httpd -k start
+FROM alpine  
+MAINTAINER Test1 Test2 <test1@test2.com>  
+RUN /sbin/apk update  
+RUN /sbin/apk upgrade  
+RUN /sbin/apk add apache2  
+RUN /bin/rm /var/www/localhost/htdocs/index.html  
+COPY index.html /var/www/localhost/htdocs/index.html  
+RUN /usr/sbin/httpd -k start  
 
 ####
 start.sh:
