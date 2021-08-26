@@ -48,7 +48,7 @@ docker rmi <name> or <id>
 docker run -it --rm --name test alpine/sh sh
 
 ## connect to interactive container
-docker attach test
+docker attach test  
 (default detach keys: CTRL-p CTRL-q)
 
 ## connect to interactive container and set unique detach keys
@@ -61,7 +61,7 @@ docker stop <name> or <id>
 docker start <name> or <id>
 
 ## change restart-policy
-docker update <name> --restart always
+docker update <name> --restart always  
 docker update nextc --restart always
 
 ## container logs/output
@@ -96,7 +96,7 @@ RUN /usr/sbin/httpd -k start
 start.sh:
 ####
 
-#!/bin/sh
+#!/bin/sh  
 /usr/sbin/httpd -k start  
 /bin/sh
 
@@ -126,7 +126,7 @@ docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}
 
 ## limit memory 
 docker update <name> --memory=200m --memory-swap=200m
-
-
-/etc/subuid
+  
+  
+/etc/subuid  
 /etc/subgid
