@@ -79,32 +79,32 @@
 
 ## custom image from Dockerfile
 
-`contents of websrv directory`
-`####`
-`Dockerfile:`
-`####`
+`contents of websrv directory`  
+`####`  
+`Dockerfile:`  
+`####`  
 
-`FROM alpine`
-`MAINTAINER Test1 Test2 <test1@test2.com>`
-`RUN /sbin/apk update`
-`RUN /sbin/apk upgrade`
-`RUN /sbin/apk add apache2`
-`RUN /bin/rm /var/www/localhost/htdocs/index.html`
-`COPY index.html /var/www/localhost/htdocs/index.html`
-`RUN /usr/sbin/httpd -k start`
+`FROM alpine`  
+`MAINTAINER Test1 Test2 <test1@test2.com>`  
+`RUN /sbin/apk update`  
+`RUN /sbin/apk upgrade`  
+`RUN /sbin/apk add apache2`  
+`RUN /bin/rm /var/www/localhost/htdocs/index.html`  
+`COPY index.html /var/www/localhost/htdocs/index.html`  
+`RUN /usr/sbin/httpd -k start`  
 
-`####`
-`start.sh:`
-`####`
+`####`  
+`start.sh:`  
+`####`  
 
-`#!/bin/sh`
-`/usr/sbin/httpd -k start`
-`/bin/sh`
+`#!/bin/sh`  
+`/usr/sbin/httpd -k start`  
+`/bin/sh`  
 
-`####`
-`index.html:`
-`####`
-`Success`
+`####`  
+`index.html:`  
+`####`  
+`Success`  
 
 ## build an image from a Dockerfile (-t <tag>) (websrv/ directory, where Dockerfile and others stored)
 `docker build -t alpine/websrv websrv/`
