@@ -128,7 +128,7 @@
 ## limit memory 
 `docker update <name> --memory=200m --memory-swap=200m`
   
-` `
+` `  
 ` `
   
 `/etc/subuid`
