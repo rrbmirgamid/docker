@@ -49,7 +49,7 @@
 `docker run -it --rm --name test alpine/sh sh`
 
 ## connect to interactive container
-`docker attach test`
+`docker attach test`  
 `(default detach keys: CTRL-p CTRL-q)`
 
 ## connect to interactive container and set unique detach keys
@@ -62,7 +62,7 @@
 `docker start <name> or <id>`
 
 ## change restart-policy
-`docker update <name> --restart always  `
+`docker update <name> --restart always`  
 `docker update nextc --restart always`
 
 ## container logs/output
@@ -113,7 +113,7 @@
 `docker run --name test2 -d -t alpine/websrv /start.sh`
 
 ## port mapping (host 80, container 80)
-`docker run --name test2 -d -t -p 80:80 alpine/websrv /start.sh`
+`docker run --name test2 -d -t -p 80:80 alpine/websrv /start.sh`  
 `docker run --name test2 -i -t -p 80:80 alpine/websrv /start.sh`
 
 ## run a command in a running container
