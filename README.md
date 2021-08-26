@@ -42,7 +42,7 @@ docker run -it --name test --rm alpine sh
 docker commit f0eaa1bbd054 alpine/sh
 
 ## remove one or more images
-```docker rmi <name> or <id>```
+\docker rmi <name> or <id>
 
 ## run new container from own image
 docker run -it --rm --name test alpine/sh sh
